@@ -1,4 +1,5 @@
 import React, { FC, useState } from 'react'
+
 import { StyledTasksForm } from '../../styles/StyledTasksForm';
 import { Button } from '../../styles/StyledButton';
 
@@ -29,7 +30,7 @@ export const Form: FC<FormProps> = ({
             <div>
                 <label htmlFor="todo">Имя задачи</label>
                 <input
-                    role='todo'
+                    data-testid='todo'
                     value={value}
                     id='todo'
                     type="text"

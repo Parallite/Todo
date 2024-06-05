@@ -28,7 +28,7 @@ export const ActiveTodoItem: FC<ActiveTodoItemProps> = ({
         <div>
             <div>
                 <input
-                    role='checkbox'
+                    data-testid="checkbox"
                     id={item.id}
                     type="checkbox"
                     checked={checked}

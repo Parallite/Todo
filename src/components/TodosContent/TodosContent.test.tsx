@@ -50,7 +50,7 @@ describe('TodosContent component', () => {
         userEvent.click(button);
 
         userEvent.click(variantCompleted);
-        expect((await screen.findAllByRole('completed-task')).length).toBe(1);
+        expect((await screen.getAllByTestId('completed-task')).length).toBe(1);
     });
 
     it('checking active tasks after remove one task', async () => {

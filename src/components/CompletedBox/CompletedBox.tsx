@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { TodoTasks } from '../../types'
-import { EmptyState } from '../EmptyState/EmptyState';
+import { EmptyState } from '../../components/EmptyState';
 import { StyledCompletedBox, } from '../../styles/StyledCompletedBox';
 import { LuCheckCircle } from "react-icons/lu";
 
@@ -17,7 +17,7 @@ export const CompletedBox: FC<CompletedBoxProps> = ({
             <ul>
                 {
                     items.length !== 0 ? (
-                        <li role='completed-task'>
+                        <li data-testid='completed-task'>
                             {items.map((item) => (
                                 <div key={item.id}>
                                     <p>{item.text}</p>
