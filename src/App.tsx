@@ -1,4 +1,4 @@
-import { TodosContent } from './components/TodosContent/TodosContent';
+import { TodosContent } from './components/TodosContent';
 import { Container } from './styles/Container';
 
 export const App = () => {

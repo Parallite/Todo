@@ -1,10 +1,12 @@
 import { useState } from "react"
 import { TodoTasks, Variant } from "../../types";
-import { Form } from "../Form/Form";
+
+import { Form } from "../Form";
+import { CompletedBox } from "../CompletedBox";
+import { ActiveBox } from "../ActiveBox";
+
 import { StyledContentBox } from "../../styles/StyledContentBox";
 import { StyledButtonsBox } from "../../styles/StyledButtonsBox";
-import { ActiveBox } from "../ActiveBox/ActiveBox";
-import { CompletedBox } from "../CompletedBox/CompletedBox";
 import { VariantButton } from "../../styles/VariantButton";
 
 const initialTasks: TodoTasks = [
@@ -32,7 +34,7 @@ export const TodosContent = () => {
 
     const addTodo = (todoText: string) => {
         const newTodo = {
-            id: String(Math.floor(Math.random() * 1000)),
+            id: String(Math.floor(Math.random() * 10000)),
             text: todoText,
             completed: false
         }

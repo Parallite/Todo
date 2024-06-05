@@ -1,8 +1,9 @@
 import { FC } from 'react'
 import { TodoTasks } from '../../types'
+import { EmptyState } from '../../components/EmptyState';
+import { ActiveTodoItem } from '../../components/ActiveTodoItem';
+
 import { StyledTasksBox } from '../../styles/StyledTasksBox';
-import { ActiveTodoItem } from '../ActiveTodoItem/ActiveTodoItem';
-import { EmptyState } from '../EmptyState/EmptyState';
 import { StyledActiveBox } from '../../styles/StyledActiveBox';
 import { Button } from '../../styles/StyledButton';
 

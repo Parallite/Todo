@@ -20,7 +20,7 @@ describe('ActiveTodoItem component', () => {
         );
     });
     it('task render', () => {
-        expect(screen.getAllByRole('checkbox').length).toBe(1);
+        expect(screen.getAllByTestId('checkbox').length).toBe(1);
     });
     it('render X button element', () => {
         expect(screen.getAllByRole('remove').length).toBe(1);
@@ -31,7 +31,7 @@ describe('ActiveTodoItem component', () => {
         expect(removeTodo).toHaveBeenCalledTimes(1);
     });
     it('checking selection checkbox by label', () => {
-        const checkbox = screen.getByRole('checkbox');
+        const checkbox = screen.getByTestId('checkbox');
         expect(checkbox).not.toBeChecked();
         userEvent.click(screen.getByLabelText(/написать тесты/i));
         expect(checkbox).toBeChecked();

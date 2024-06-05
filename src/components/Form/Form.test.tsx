@@ -9,7 +9,7 @@ describe('Form component', () => {
         render(<Form addTodo={addTodo} />);
     });
     it('render input element', () => {
-        expect(screen.getByRole('todo')).toBeInTheDocument();
+        expect(screen.getByTestId('todo')).toBeInTheDocument();
     });
     it('render input element with placeholder "Введите имя задачи"', () => {
         expect(screen.getByPlaceholderText(/введите имя задачи/i)).toBeInTheDocument();
