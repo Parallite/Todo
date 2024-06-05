@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Parallite/Todo/static/css/main.dc34e10c.css",
+    "main.js": "/Parallite/Todo/static/js/main.3db6e58f.js",
+    "index.html": "/Parallite/Todo/index.html",
+    "main.dc34e10c.css.map": "/Parallite/Todo/static/css/main.dc34e10c.css.map",
+    "main.3db6e58f.js.map": "/Parallite/Todo/static/js/main.3db6e58f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc34e10c.css",
+    "static/js/main.3db6e58f.js"
+  ]
+}
